@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "Zen",
+  "version": "1.0",
+  "description": "Description of your extension",
+  "permissions": ["activeTab", "storage"],
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self'",
+    "img-src": ["'self'", "https://i.pinimg.com"]
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "css": ["styles.css"]
+    }
+  ],
+  "icons": {
+    "48": "icon.png"
+  }
+}

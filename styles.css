@@ -1,0 +1,15 @@
+#bottom-left-image {
+    position: fixed;
+    bottom: -53px;
+    left: -150px;
+    width: 400px;
+    /* Adjust width */
+    height: auto;
+    z-index: 1000;
+    /* Ensure it appears above other content */
+    background-color: transparent;
+}
+
+#chasing-image {
+    position: absolute;
+}
